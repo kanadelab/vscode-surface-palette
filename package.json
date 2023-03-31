@@ -1,0 +1,43 @@
+{
+	"name": "surface-palette",
+	"displayName": "SurfacePalette",
+	"description": "サーフェスパレット for VisualStudio Code from Satolist",
+	"version": "0.0.1",
+	"publisher": "kanadelab",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"customEditors": [
+			{
+				"viewType": "surfacePalette.view",
+				"displayName": "Cat Scratch",
+				"selector": [
+					{
+						"filenamePattern": "surfaces.json"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -w -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.73.0",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"eslint": "^8.26.0",
+		"typescript": "^5.0.2"
+	}
+}
