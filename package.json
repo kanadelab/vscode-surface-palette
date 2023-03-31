@@ -4,6 +4,10 @@
 	"description": "サーフェスパレット for VisualStudio Code from Satolist",
 	"version": "0.0.1",
 	"publisher": "kanadelab",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kanadelab/vscode-surface-palette"
+	},
 	"engines": {
 		"vscode": "^1.74.0"
 	},
